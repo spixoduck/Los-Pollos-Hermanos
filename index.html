@@ -1,0 +1,490 @@
+<!DOCTYPE html>
+<html lang="utf-8">
+
+<head>
+  <meta charset="utf-8">
+  <title>Los Pollos Hermanos</title>
+  <link href="style.css" rel="stylesheet" type="text/css">
+  <meta name="viewport" content="width=device-width, intial-scale=1.0">
+  <style>
+    * {
+      margin: 0;
+    }
+
+    body {
+      background-color: #fccc00;
+    }
+    .custom {
+      display: flex;
+      width: 100%;
+      height: 100%;
+      font-family: "pollos";
+    }
+
+    .topnav {
+      display: flex;
+      align-items: center;
+      position: relative;
+      width: 100%;
+      height: 250px;
+    }
+
+    .friedchicken {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      width: 30%;
+      height: 5%;
+      margin-left: 3%;
+      font-family: "pollos";
+    }
+    .friedchicken img {
+      border: 8px double black;
+      transition: ease-in 1s;
+    }
+    .burrito {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      width: 30%;
+      height: 5%;
+      margin-left: 0%;
+      font-family: "pollos";
+      margin-bottom: 10%;
+    }
+    .burrito img {
+      border: 8px double black;
+      transition: ease-in 1s;
+    }
+    .binfo {
+      background-color: #9f1000;
+      width: 70%;
+      height: 70%;
+      position: absolute;
+      z-index: -1;
+      opacity: 0%;
+      display: flex;
+      justify-content: flex-end;
+      align-items: center;
+      flex-direction: column;
+      transition: ease-in 1s;
+    }
+    .cart {
+      width: 40%;
+      background-color: white;
+      color: black;
+      margin-bottom: 3%;
+      border: none;
+      font-size: 150%;
+      color: white;
+      background-color: skyBlue;
+      border: 5px solid white;
+      border-radius: 80px;
+      letter-spacing: .25px;
+    }
+    .burrito:hover div{
+      width: 110%;
+      height: 110%;
+      opacity: 100%;
+      transition: ease-in 1s;
+    }
+    .burrito:hover p{
+      opacity: 0%;
+    }
+    .burrito p {
+      opacity: 100%;
+      font-size: 150%;
+      text-align: center;
+      transition: ease-in 1s;
+    }
+
+  
+    .taco {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      width: 30%;
+      positon: relative;
+      height: 5%;
+      margin-right: 1.5%;
+      font-family: "pollos";
+    }
+    .taco img {
+      border: 8px double black;
+      transition: ease-in 1s;
+      
+    }
+    .tacfo {
+      background-color: #9f1000;
+      width: 70%;
+      height: 70%;
+      position: absolute;
+      z-index: -1;
+      opacity: 0%;
+      display: flex;
+      justify-content: flex-end;
+      align-items: center;
+      flex-direction: column;
+      transition: ease-in 1s;
+    }
+
+    .taco:hover div{
+      width: 110%;
+      height: 110%;
+      opacity: 100%;
+      transition: ease-in 1s;
+    }
+    .taco:hover p{
+      opacity: 0%;
+    }
+    .taco p {
+      opacity: 100%;
+      font-size: 150%;
+      text-align: center;
+      transition: ease-in 1s;
+    }
+    .friedchicken p {
+      opacity: 100%;
+      font-size: 150%;
+      text-align: center;
+      transition: ease-in 1s;
+    }
+    .friedchicken:hover p {
+      opacity: 0%;
+    }
+    .friedchicken:hover div{
+      width: 110%;
+      height: 110%;
+      opacity: 100%;
+      transition: ease-in 1s;
+    }
+    .row1 {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-around;
+      width: 100%;
+      height: 40%;
+    }
+    .row2 {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-around;
+      width: 100%;
+      height: 40%;
+    }
+    .row3 {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-around;
+      width: 100%;
+      height: 40%;
+    }
+
+    .containter4 {
+      display: flex;
+
+    }
+    .newsbox {
+      background-color: #e0dede;
+      height: 150px;
+      width: 1200px;
+      margin: auto;
+    }
+    .bnewsbox {
+      background-color: white;
+      width: 1200px;
+      margin: auto;
+      font-family: Amazon Ember, sans-serif;
+      padding-left:15px;
+      border: 1px solid black;
+    }
+      
+    .sandwich {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      width: 30%;
+      positon: relative;
+      height: 5%;
+      margin-right: 1.5%;
+      font-family: "pollos";
+    }
+    .sandwich img {
+      border: 8px double black;
+      transition: ease-in 1s;
+    }
+    .sanfo {
+      background-color: #9f1000;
+      width: 70%;
+      height: 70%;
+      position: absolute;
+      z-index: -1;
+      opacity: 0%;
+      display: flex;
+      justify-content: flex-end;
+      align-items: center;
+      flex-direction: column;
+      transition: ease-in 1s;
+    }
+
+    .sandwich:hover div{
+      width: 110%;
+      height: 110%;
+      opacity: 100%;
+      transition: ease-in 1s;
+    }
+    .sandwich:hover p{
+      opacity: 0%;
+    }
+    .sandwich p {
+      opacity: 100%;
+      font-size: 150%;
+      text-align: center;
+      transition: ease-in 1s;
+    }
+    .topnav a {
+      margin-right: 5%;
+    }
+  </style>
+
+</head>
+
+<body>
+  <div class="topnav">
+    <a href="index.html"><img src="images/logolospollos.png" height="100%" width="50%"></a><a href="menu.html" style=" text-decoration: none;
+      font-family: 'pollos';
+      color: black;
+      font-size: 50px;">Menu</a><a href="times.html" style="text-decoration: none;
+      font-family: 'pollos';
+      color: black;
+      
+      font-size: 50px;">Times</a><a href="order.html"
+      style="      text-decoration: none;
+      font-family: 'pollos';
+      color: black;
+      
+      font-size: 50px;">Order</a>
+  <a href=" Contact.html" style="
+    text-decoration: none;
+    font-family: 'pollos';
+    color: black;
+    
+    font-size: 50px;
+    ">Contact Us</a>
+  
+  </div>
+  <img src="images/zig.png" width="100%">
+
+  <div class="custom">
+    <img src="images/chicken.webp" height="100%" width="50%">
+    <p style="font-size: 300%;padding: 3%;">Welcome to the Los Pollos Hermanos. We love all of our loyal customers
+      equally and strive to provide an impeccable experience for everyone!</p>
+  </div>
+
+  <div class="custom">
+    <p style="font-size: 300%;padding: 3%;">Los Pollos Hermanos is well known for its fantastic food and amazing customer service. We hope to continue to grow this brand over time and expand to different states and even countries.</p>
+    
+    <img src="images/friedchicken.webp" height="100%" width="50%">
+  </div>
+  <br>
+
+  <!--row 1 of the menu thing-->
+  <br>
+  <img src="images/zig.png" width="100%">
+  <br>
+  <br>
+  <p style="font-size: 350%;text-align: center;font-weight: bold;margin-bottom: 5%;"><u>MENU</u></p>
+  <div class="row1">
+    <div class="friedchicken"  style="position: relative;align-items: center;">
+      <div class="tacfo">
+        <button class="cart">$9.99</button>
+      </div>
+      <a href="order.html"><img src='images/signature.jpeg' height="20%" width="90%"></a>
+      <p style="font-size: 150%;text-align: center;"><u>OUR SIGNATURE DISH:</u><br>Fried chicken prepared by
+        our best chefs with top of the line impeccable care and quality.</p>
+    </div>
+    <div class="burrito" style="position: relative;align-items: center;">
+      <div class="binfo">
+      <button class="cart">$6.99</button>
+      </div>
+      <a href="order.html"><img src="images/burrito.jpg" height="20%" width="90%" style="display: inline-block;"></a>
+      <p><u>Burrito:</u><br>Hand crafted delicatley by our staff to ensure an enjoyable taste.</p>
+    </div>
+    <div class="taco" style="position: relative;align-items: center;"">
+      <div class="tacfo">
+      <button class="cart">$2.99</button>
+      </div>
+      <a href="order.html"><img src='images/taco.jpg' height="20%" width="90%"></a>
+      <p><u>Taco</u>:<br>Made with all the right ingredients to ensure a delightful experience.</p>
+    </div>
+  </div>
+  <br>
+  <!--row 2 of the menu thing-->
+  <div class="row2">
+    <div class="sandwich" style="position: relative;align-items: center;">
+        <a href="order.html"><img src='images/pollitosandwich.jpg' height="20%" width="90%"></a>
+      <div class="sanfo">
+        <button class="cart">$3.99</button>
+      </div>
+        <p style="font-size: 150%;text-align: center;">Chicken Sandwich:    <br>This classic dish is reimagined by Los Pollos Hermanos to give an immaculate taste. </p>
+    </div>
+    <div class="burrito" style="position: relative;align-items: center;">
+      <a href="order.html"><img src="images/nuggets.jpg" height="20%" width="90%" style="display: inline-block;"></a>
+      <div class="binfo">
+        <button class="cart">$4.99</button>
+      </div>
+      <p><u>Chicken Nuggets:</u><br>Perfect meal for any young ones you happen to bring on your trip in Los Pollos Hermanos.</p>
+    </div>
+    <div class="taco" style="position: relative;align-items: center;">
+      <div class="tacfo">
+      <button class="cart">$2.99</button>
+      </div>
+      <a href="order.html"><img src='images/borger.jpg' height="20%" width="90%"></a>
+      <p><u>Cheese Burger:</u><br>A perfectly made cheese burger is always great for the whole family.</p>
+    </div>
+  </div>
+  <br>
+  <!--row 3 of the menu thing-->
+  <div class="row3">
+    <div class="sandwich" style="position: relative;align-items: center;">
+        
+        <a href="order.html"><img src='images/water.png' height="20%" width="90%"></a>
+      <div class="sanfo">
+        <button class="cart">$21.99</button>
+      </div>
+        <p style="font-size: 150%;text-align: center;"><u>Los Pollos Branded Water:</u>   <br>An essential for human life.</p>
+    </div>
+    <div class="burrito" style="position: relative;align-items: center;">
+      <a href="order.html"><img src="images/smoothie.png" height="20%" width="90%" style="display: inline-block;"></a>
+      <div class="binfo">
+        <button class="cart">$4.99</button>
+      </div>
+      <p><u>Los Pollos Branded Smoothie:</u><br>A tasty drink for the warmer climates. Available in Vanilla, Chocolate, Strawberry, and Mango flavors.</p>
+    </div>
+    <div class="taco" style="position: relative;align-items: center;"">
+      <div class="tacfo">
+      <button class="cart">$9.99</button>
+      </div>
+      <a href="order.html"><img src='images/mug.png' height="20%" width="90%"></a>
+      <p><u>Los Pollos branded coffee mug:</u><br>The coffee machine broke.</p>
+    </div>
+  </div>
+  <img src="images/zig.png" width="100%">
+  <p style="text-align: center;font-size: 300%;"><u>Leave a review:</u></p>
+  <div style="display: flex;width: 100%;align-items: center;flex-direction: column;">
+  <form id="reviewf" action="https://formsubmit.co/gonamanuel865@gmail.com" method="POST" style="display: flex;align-items: center;flex-direction: column;">
+    <input type="text" id="username" class="form-control" placeholder="Enter your Name" style="margin-top: 1%;margin-bottom: 1%;">
+    <textarea cols="40" rows="8" placeholder="Type your review here" id="review"></textarea>
+    <label for="stars" style="margin-top: 2%;margin-bottom: 1%;"> Rate us out of 5 stars:</label>
+    <input type="number" name="stars" id="stars" min="0" max="5" >
+    <br>
+    <div style="display: flex;justify-content: center;padding-bottom: 3%;">
+    <input type="submit" onclick="makeboxs()">
+    </div>
+  </form>
+  </div>
+    <div class="main">
+
+  </div>
+  <script>
+  function makeboxs() {
+    var boxnews = document.createElement("div");
+    var boxnewsh = document.createElement("h3");
+    var starsimg = document.createElement("img");
+    starsimg.style.height = "1%";
+    starsimg.style.width = "5%";
+    starsimg.style.margin = "0% 0% 0% 0.5%";
+    if (stars.value == 5) {
+      starsimg.src = "images/5star.png";
+    }
+    if (stars.value == 4) {
+      starsimg.src = "images/4star.png";
+    }
+    if (stars.value == 3) {
+      starsimg.src = "images/3star.png";
+    }
+    if (stars.value == 2) {
+      starsimg.src = "images/2star.png";
+    }
+    if (stars.value == 1) {
+      starsimg.src = "images/1star.png";
+    }
+    if (stars.value == 0) {
+      starsimg.src = "images/0star.png";
+    }
+    boxnewsh.style.padding = "10px 0px 0px 10px";
+    var container = document.querySelector(".main");
+    boxnews.setAttribute('class', 'bnewsbox');
+    container.appendChild(boxnews);
+    let title = username.value;
+    let htext = document.createTextNode(title);
+    boxnewsh.appendChild(htext);
+    boxnews.appendChild(boxnewsh);
+    boxnews.appendChild(starsimg);
+    var boxnewsp = document.createElement("p");
+    boxnewsp.style.padding = "0px 0px 0px 10px";
+    let maintxtask = review.value;
+    let maintxt = document.createTextNode(maintxtask);
+    boxnewsp.appendChild(maintxt);
+    boxnews.appendChild(boxnewsp);
+
+  }
+    let loginForm = document.getElementById("reviewf");
+
+loginForm.addEventListener("submit", (e) => {
+  e.preventDefault();
+
+  let username = document.getElementById("username");
+  let password = document.getElementById("password");
+  let stars = document.getElementById("stars");
+
+  if (username.value == "" || password.value == "") {
+    alert("Ensure you input a value in both fields!");
+  } else {
+
+
+    username.value = "";
+    password.value = "";
+  }
+});
+</script>
+  <main>
+    <br>
+    <br>
+    <img src="images/zig.png" width="100%">
+    <div class="container4" style="display: flex;justify-content: center;">
+      <div style="display: flex;flex-direction: column;justify-content: center;align-items: center;">
+        <img class="equip" src="images/address.png" alt="Picture address" height="102" width="100">
+        <p style="text-align: center;"> When we aren't moving around,<br> we can be located at:<br><a href="https://goo.gl/maps/ZWwSSpRbdZ9REHLw8"> 4275 Isleta Blvd SW, Albuquerque, NM 87105</a></p>
+      </div>
+
+      <div style="display: flex;flex-direction: column;justify-content: center;align-items: center;">
+
+        <img class="equip" src="images/phone.png" height="120" width="120">
+        <p> Our phone number is:<br>
+          <a class="mobile" href="tel: 9547778888">(954)777-8888</a><br>
+        </p>
+        <br>
+      </div>
+
+      <div style="display: flex;flex-direction: column;justify-content: center;align-items: center;">
+        <img class="equip" src="images/mail.png" alt="Picture of mail" height="120" width="120">
+        <p>
+          Our email address is:<br>
+          <a href="mailto:LosPollossHermanos@gmail.com"> LosPollosHermanos@gmail.com</a><br>
+        </p>
+      </div>
+    </div>
+  </main>
+  <footer>
+
+    <div style="display: flex;align-items: center;width: 100%;height: 20%;flex-direction: column;">
+      <img src="images/My project copy-1.png" alt="logo2" height="100" width="100"> &copy;Copyright 2023. All Rights
+      Reserved.
+    </div>
+  </footer>
+</body>
+
+</html>

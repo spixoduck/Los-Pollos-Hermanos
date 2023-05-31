@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="utf-8">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>Los Pollos Hermanos</title>
+  <link href="style.css" rel="stylesheet" type="text/css">
+
+  <style>
+    * {
+      margin: 0;
+      
+    }
+
+    body {
+      background-color: #fccc00;
+    }
+
+    h1{
+      font-size: 300%;
+      margin-left: 39%;
+    }
+    h2{
+      font-size: 350%;
+    }
+    .custom {
+      display: flex;
+      width: 100%;
+      height: 100%;
+      font-family: "pollos";
+    }
+
+    .topnav {
+      width: 100%;
+      height: 250px;
+      display: flex;
+      align-items: center;
+      position: relative;
+    }
+
+
+    .friedchicken {
+      display: flex;
+      flex-direction: column;
+      width: 30%;
+      height: 5%;
+      margin-left: 3%;
+      font-family: "pollos";
+    }
+    .burrito {
+      display: flex;
+      flex-direction: column;
+      width: 30%;
+      height: 5%;
+      margin-left: 3%;
+      font-family: "pollos";
+    }
+    .taco {
+      display: flex;
+      flex-direction: column;
+      width: 30%;
+      height: 5%;
+      margin-left: 3%;
+      font-family: "pollos";
+    }
+    .row1 {
+      display: flex;
+      flex-direction: row;
+      width: 100%;
+      height: 40%;
+    }
+    .containter4 {
+      display: flex;
+
+    }
+
+    .topnav a {
+      margin-right: 5%;
+    }
+
+  </style>
+
+</head>
+
+<body>
+  <header>
+  </header>
+  <div class="topnav">
+    <a href="index.html"><img src="images/logolospollos.png" height="100%" width="50%"></a><a href="menu.html" style=" text-decoration: none;
+      font-family: 'pollos';
+      color: black;
+      font-size: 50px;">Menu</a><a href="times.html" style="text-decoration: none;
+      font-family: 'pollos';
+      color: black;
+      
+      font-size: 50px;">Times</a><a href="order.html"
+      style="      text-decoration: none;
+      font-family: 'pollos';
+      color: black;
+      
+      font-size: 50px;">Order</a>
+  <a href=" Contact.html" style="
+    text-decoration: none;
+    font-family: 'pollos';
+    color: black;
+    
+    font-size: 50px;
+    ">Contact Us</a>
+  
+  </div>
+  
+  
+  </div>
+  <img src="images/zig.png" width="100%">
+  
+  <h2 style="text-align: center;margin-bottom:2%;font-family: 'pollos'"><u>Where you can find us:</u></h2>
+<div style="display: flex;width: 100%;justify-content: center;flex-direction: column;align-items: center;">
+<img src="images/map.png" width="30%" height="100%" name="myImage" />
+<form method="" action="" name="myForm">
+    <select size="5" name="switch" onchange="switchImage();">
+        <option value="1">June 4-8</option>
+        <option value="2">June 11-15</option>
+        <option value="3">June 18-22</option>
+        <option value="4">June 25-29</option>
+        <option value="5">July 1-5</option>
+    </select>
+</form>
+    
+</div>
+<script>
+var imageList = Array();
+for (var i = 1; i <= 5; i++) {
+    imageList[i] = new Image(0, 0);
+    imageList[i].src = "images/map" + i + ".png";
+}
+
+function switchImage() {
+    var selectedImage = document.myForm.switch.options[document.myForm.switch.selectedIndex].value;
+    document.myImage.src = imageList[selectedImage].src;
+}
+</script>
+  <br>
+  <h1><b><u> Los Pollos Summer Tour!</u></b></h1>
+  <br>
+  <div class="custom">
+    <img src="images/summer.png" height="100%" width="50%">
+    <p style="font-size: 300%;padding: 20px;">The Los Pollos Hermanos Food Truck will be touring to many different cities like <u>Albuquerque</u> (June 4-8), <u>Las Vegas</u> (June 11-15), <u>Los Angeles</u> (June 18-22), <u>San Francisco</u> (June 25-29), and finally <u>Salt Lake City</u> (July 1-5). <br> When we are not on tour we can be located at <u>4275 Isleta Blvd SW, Albuquerque, NM 87105</u> until further notice. We DO take requests on locations to travel to on non-special event days! Expect more updates of our whereabouts and future events on our social media pages!</p>
+  </div>
+  <br>
+  <br>
+  <img src="images/zig.png" width="100%">
+  <main>
+    <div class="container4" style="display: flex;justify-content: center;">
+      <div style="display: flex;flex-direction: column;justify-content: center;align-items: center;">
+<img class="equip" src="images/address.png" alt="Picture address" height="102" width="100">
+        <p style="text-align: center;"> When we aren't moving around,<br> we can be located at:<br><a href="https://goo.gl/maps/ZWwSSpRbdZ9REHLw8"> 4275 Isleta Blvd SW, Albuquerque, NM 87105</a></p>
+      </div>
+
+      <div style="display: flex;flex-direction: column;justify-content: center;align-items: center;">
+
+        <img class="equip" src="images/phone.png" height="120" width="120">
+        <p> Our phone number is:<br>
+          <a class="mobile" href="tel: 9547778888">(954)777-8888</a><br>
+        </p>
+        <br>
+      </div>
+
+      <div style="display: flex;flex-direction: column;justify-content: center;align-items: center;">
+        <img class="equip" src="images/mail.png" alt=Picture of mail" height="120" width="120">
+        <p>
+          Our email address is:<br>
+          <a href="mailto:LosPollossHermanos@gmail.com"> LosPollosHermanos@gmail.com</a><br>
+        </p>
+      </div>
+    </div>
+  </main>
+  <footer>
+
+    <div style="display: flex;align-items: center;width: 100%;height: 20%;flex-direction: column;">
+      <img src="images/My project copy-1.png" alt="logo2" height="100" width="100"> &copy;Copyright 2023. All Rights
+      Reserved.
+    </div>
+  </footer>
+</body>
+
+</html>

@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html lang="utf-8">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>Los Pollos Hermanos</title>
+  <link href="style.css" rel="stylesheet" type="text/css">
+  
+  <style>
+    * {
+      margin: 0;
+    }
+    @keyframes rv {
+			from {right: 0;top: 900px;}
+			to {right: 100%;top: 900px;}
+		}
+		#vroom {
+			position: absolute;
+			bottom: 0;
+			animation-name: rv;
+			animation-timing-function: linear;
+			animation-duration: 2.5s;
+			z-index: 3;
+			animation-iteration-count: infinite;
+		}
+    body {
+      background-color: #fccc00;
+    }
+
+    .custom {
+      display: flex;
+      width: 100%;
+      height: 100%;
+      font-family: "pollos";
+    }
+    h1{
+      font-size: 250%;
+    }
+    p{
+    font-size: 150%;
+    }
+    .topnav {
+      width: 100%;
+      height: 250px;
+      display: flex;
+      align-items: center;
+      position: relative;
+    }
+
+    .friedchicken {
+      display: flex;
+      flex-direction: column;
+      width: 30%;
+      height: 5%;
+      margin-left: 3%;
+      font-family: "pollos";
+    }
+
+    .burrito {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      width: 40%;
+      height: 5%;
+      margin-left: 3%;
+      font-family: "pollos";
+      margin-bottom: 10%;
+    }
+    .binfo {
+      background-color: #9f1000;
+      width: 70%;
+      height: 70%;
+      position: absolute;
+      z-index: -1;
+      opacity: 0%;
+      display: flex;
+      justify-content: flex-end;
+      align-items: center;
+      flex-direction: column;
+      transition: ease-in 1s;
+    }
+    #cart {
+      width: 10%;
+      background-color: white;
+      color: black;
+      margin-bottom: 3%;
+      border: none;
+    }
+    .burrito:hover div{
+      width: 110%;
+      height: 110%;
+      opacity: 100%;
+      transition: ease-in 1s;
+    }
+    .burrito:hover p{
+      opacity: 0%;
+    }
+    .burrito p {
+      opacity: 100%;
+      font-size: 150%;
+      text-align: center;
+      transition: ease-in 1s;
+    }
+
+  
+    .taco {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      width: 30%;
+      positon: relative;
+      height: 5%;
+      margin-left: 3%;
+      font-family: "pollos";
+    }
+    .tacfo {
+      background-color: #9f1000;
+      width: 70%;
+      height: 70%;
+      position: absolute;
+      z-index: -1;
+      opacity: 0%;
+      display: flex;
+      justify-content: flex-end;
+      align-items: center;
+      flex-direction: column;
+      transition: ease-in 1s;
+    }
+
+    .taco:hover div{
+      width: 110%;
+      height: 110%;
+      opacity: 100%;
+      transition: ease-in 1s;
+    }
+    .taco:hover p{
+      opacity: 0%;
+    }
+    .taco p {
+      opacity: 100%;
+      font-size: 150%;
+      text-align: center;
+      transition: ease-in 1s;
+    }
+
+    .row1 {
+      display: flex;
+      flex-direction: row;
+      width: 100%;
+      height: 40%;
+    }
+    .row2 {
+      display: flex;
+      flex-direction: row;
+      width: 100%;
+      height: 40%;
+    }
+    .row3 {
+      display: flex;
+      flex-direction: row;
+      width: 100%;
+      height: 40%;
+    }
+
+    .containter4 {
+      display: flex;
+
+    }
+    .newsbox {
+      background-color: #e0dede;
+      height: 150px;
+      width: 1200px;
+      margin: auto;
+    }
+    .bnewsbox {
+      background-color: white;
+      width: 1200px;
+      margin: auto;
+      font-family: Amazon Ember, sans-serif;
+      padding-left:15px;
+      border: 1px solid black;
+    }
+
+
+
+
+    .submit{
+        width: 160px;
+        height: 80px;
+        font-size: 40px;
+        color: white;
+        background-color: skyBlue;
+        border: 5px solid black;
+        border-radius: 80px;
+        letter-spacing: .25px;
+    }
+
+    .submit:hover{
+        width: 170px;
+        height: 80px;
+        font-size: 41px;
+        color: white;
+        background-color:cyan;
+        border: 6px solid black;
+        border-radius: 50px;
+        letter-spacing: .25px;
+    }
+
+    .topnav a {
+      margin-right: 5%;
+    }
+  </style>
+
+</head>
+
+<body>
+  <div class="topnav">
+    <a href="index.html"><img src="images/logolospollos.png" height="100%" width="50%"></a><a href="menu.html" style=" text-decoration: none;
+      font-family: 'pollos';
+      color: black;
+      font-size: 50px;">Menu</a><a href="times.html" style="text-decoration: none;
+      font-family: 'pollos';
+      color: black;
+      
+      font-size: 50px;">Times</a><a href="order.html"
+      style="      text-decoration: none;
+      font-family: 'pollos';
+      color: black;
+      
+      font-size: 50px;">Order</a>
+  <a href=" Contact.html" style="
+    text-decoration: none;
+    font-family: 'pollos';
+    color: black;
+    
+    font-size: 50px;
+    ">Contact Us</a>
+  
+  </div>
+  
+  </div>
+  <header>
+  </header>  
+  <main>
+    <img src="images/zig.png" width="100%">
+    <br>
+    <br>
+    <br>
+    <h1><u>Contact Us</u></h1>
+    <p>We understand some of you may have questions that were left unanswerd on our site. Any questions you may have may be typed in the box below. Fill in the necessary information including your email, the subject of the message, and the message itself. The message will be sent to our support teams and you should recieve an email in regards to your message.</p>
+    <form style="background-color: white;border: 5px solid skyBlue; padding: 10px;" action="https://formsubmit.co/gonamanuel867@gmail.com" method="POST">
+    	<fieldset>
+    		<legend> Contact Us: </legend>
+    		<label> Your e-mail: </label>
+		<input type="text" name="E-mail" id="E-mail" tabindex="1"> <br><br>
+    		<label> Subject: </label>
+        	<input type="text" name="Subject" id="Subject" tabindex="2"><br><br>
+    		<label style="float: left;"> Type your comment here: </label>
+        	<textarea type="text" name="Message" id="Message" rows="4" cols="25" tabindex="3"></textarea><br><br>
+    		<input id="mySubmit" type="submit" value="Submit" tabindex="4" class="submit">
+    	</fieldset>
+	</form>
+      <br>
+    <br>
+    <img src="images/zig.png" width="100%">
+       <h1><u>Request The Truck</u></h1>
+    <p id="soon">On days we aren't on tour, we give you the option to request us to come to your location. Whether you are celebrating a birthday or a wedding, Los Pollos Hermanos has you covered.</p> <form style="background-color: white;border: 5px solid skyBlue; padding: 10px;" id="request1">
+    	<fieldset>
+    		<legend> Request the Food Truck </legend>
+    		<label> Your e-mail: </label>
+		<input type="text" name="E-mail" id="E-mail" tabindex="1"> <br><br>
+    		<label> Phone Number: </label>
+        	<input type="text" name="Number" id="Number" tabindex="2"><br><br>
+    		<label style="float: left;"> Details- include day, event details, instructions, extra comments: </label>
+        	<textarea type="text" name="Details" id="Details" rows="4" cols="25" tabindex="3"></textarea><br><br>
+    		<input id="mySubmit" type="submit" value="Submit" tabindex="4" class="submit">
+    	</fieldset>
+	</form>
+    <img src="images/woopsies.webp" style="display: none;position: absolute;" id="vroom">
+    
+ <script>
+var request1 = document.getElementById("request1");
+
+request1.addEventListener("submit", (e) => {
+  e.preventDefault();
+  let rv = document.getElementById("vroom");
+  let soon = document.getElementById("soon");
+  soon.innerHTML = "We're on our way! See you soon!";
+  rv.style.display = "block";
+  request1.style.opacity = "0%";
+  }
+);
+    </script>
+    <img src="images/zig.png" width="100%">
+  </main>
+  <footer>
+    <div class="container4" style="display: flex;justify-content: center;">
+      <div style="display: flex;flex-direction: column;justify-content: center;align-items: center;">
+    <img class="equip" src="images/address.png" alt="Picture address" height="102" width="100">
+        <p style="text-align: center;"> When we aren't moving around,<br> we can be located at:<br><a href="https://goo.gl/maps/ZWwSSpRbdZ9REHLw8"> 4275 Isleta Blvd SW, Albuquerque, NM 87105</a></p>
+      </div>
+
+      <div style="display: flex;flex-direction: column;justify-content: center;align-items: center;">
+
+        <img class="equip" src="images/phone.png" height="120" width="120">
+        <p> Our phone number is:<br>
+          <a class="mobile" href="tel: 9547778888">(954)777-8888</a><br>
+        </p>
+        <br>
+      </div>
+
+      <div style="display: flex;flex-direction: column;justify-content: center;align-items: center;">
+        <img class="equip" src="images/mail.png" alt="Picture of mail" height="120" width="120">
+        <p>
+          Our email address is:<br>
+          <a href="mailto:LosPollossHermanos@gmail.com"> LosPollosHermanos@gmail.com</a><br>
+        </p>
+      </div>
+    </div>
+  </main>
+  <footer>
+
+    <div style="display: flex;align-items: center;width: 100%;height: 20%;flex-direction: column;">
+      <img src="images/My project copy-1.png" alt="logo2" height="100" width="100"> &copy;Copyright 2023. All Rights
+      Reserved.
+    </div>
+  </footer>
+</body>
+
+</html>
