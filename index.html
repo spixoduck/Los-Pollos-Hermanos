@@ -185,13 +185,7 @@
       display: flex;
 
     }
-    .newsbox {
-      background-color: #e0dede;
-      height: 150px;
-      width: 1200px;
-      margin: auto;
-    }
-    .bnewsbox {
+    .review {
       background-color: white;
       width: 1200px;
       margin: auto;
@@ -390,8 +384,8 @@
   </div>
   <script>
   function makeboxs() {
-    var boxnews = document.createElement("div");
-    var boxnewsh = document.createElement("h3");
+    var reviewbox = document.createElement("div");
+    var reviewt = document.createElement("h3");
     var starsimg = document.createElement("img");
     starsimg.style.height = "1%";
     starsimg.style.width = "5%";
@@ -414,21 +408,21 @@
     if (stars.value == 0) {
       starsimg.src = "images/0star.png";
     }
-    boxnewsh.style.padding = "10px 0px 0px 10px";
+    reviewt.style.padding = "10px 0px 0px 10px";
     var container = document.querySelector(".main");
-    boxnews.setAttribute('class', 'bnewsbox');
-    container.appendChild(boxnews);
+    reviewbox.setAttribute('class', 'review');
+    container.appendChild(reviewbox);
     let title = username.value;
     let htext = document.createTextNode(title);
-    boxnewsh.appendChild(htext);
-    boxnews.appendChild(boxnewsh);
-    boxnews.appendChild(starsimg);
+    reviewt.appendChild(htext);
+    reviewbox.appendChild(reviewt);
+    reviewbox.appendChild(starsimg);
     var boxnewsp = document.createElement("p");
     boxnewsp.style.padding = "0px 0px 0px 10px";
     let maintxtask = review.value;
     let maintxt = document.createTextNode(maintxtask);
     boxnewsp.appendChild(maintxt);
-    boxnews.appendChild(boxnewsp);
+    reviewbox.appendChild(boxnewsp);
 
   }
     let loginForm = document.getElementById("reviewf");
